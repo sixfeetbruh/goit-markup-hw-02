@@ -1,0 +1,201 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primary-title-color: #212121;
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --accent-second-color: #188CE8;
+    --primary-bgc-color: #fff;
+    --primary-body-color: #000;
+    --section-bcg-color: #2F303A;
+    --portfolio-btn-grey-color: #F5F4FA;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+/* =============== PRIMARY STYLES =============== */
+
+body {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--primary-body-color);
+    background-color: var(--primary-bgc-color);
+}
+
+img {
+    display: block;
+}
+
+button {
+   font-family: inherit;
+   cursor: pointer;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* =============== HEADER SECTION =============== */
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.web-logo {
+    color: var(--accent-color);
+}
+
+/* =============== NAVIGATION MENU SECTION =============== */
+
+.page-nav .link {
+    color: var(--primary-title-color);
+}
+
+.menu-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+.menu-nav .link:hover,
+.menu-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.menu-link {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* =============== NAVIGATION CONTACT SECTION =============== */
+
+.contacts-link {
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--accent-color);
+}
+
+/* =============== MAIN SECTION =============== */
+
+.hero { 
+    background-color: var(--section-bcg-color);
+}
+
+.hero-title {
+    color: var(--primary-bgc-color);
+}
+
+/* =============== STUDIO BUTTON SECTION =============== */
+
+.button-studio  {
+    background-color: var(--accent-color);
+    color: var(--primary-bgc-color);
+    border-radius: 4px;
+}
+
+.button-studio:hover,
+.button-studio:focus,
+.button-studio:active {
+    background-color: var(--accent-second-color);
+}
+
+/* =============== PORTFOLIO BUTTON SECTION =============== */
+
+.button-portfolio  {
+    background-color: var(--portfolio-btn-grey-color);
+    color: var(--primary-title-color);
+    border-radius: 4px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: var(--primary-bgc-color);
+    background-color: var(--accent-second-color);
+}
+
+/* =============== HIDEN TITLE =============== */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* =============== MAIN SECTION =============== */
+
+.section-title {
+    color: var(--primary-title-color);
+}
+
+.feature-list .title {
+    color: var(--primary-title-color);
+}
+
+.feature-list .text {
+    color: var(--primary-text-color);
+}
+
+.team-section {
+    background-color: var(--portfolio-btn-grey-color);
+}
+
+.img-team {
+    background-color: var(--primary-bgc-color);
+}
+
+/* =============== FOOTER SECTION =============== */
+
+.page-footer,
+.page-footer .link {
+    background-color: var(--section-bcg-color);
+    color: var(--primary-bgc-color);
+    font-style: normal;
+}
+
+.page-footer .footer-link.mail,
+.page-footer .footer-link.phone {
+    color: var(--footer-contacts-color);
+}
+
+.contacts-footer .link:hover,
+.contacts-footer .link:focus {
+    color: var(--accent-color);
+
+}
+
+.footer-item {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
