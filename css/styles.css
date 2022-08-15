@@ -15,12 +15,11 @@
 /* =============== PRIMARY STYLES =============== */
 
 body {
-    font-family: var(--primary-font);
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.03em;
     color: var(--primary-body-color);
     background-color: var(--primary-bgc-color);
+    font-family: var(--primary-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 img {
@@ -40,8 +39,19 @@ button {
     text-decoration: none;
 }
 
-.uppercase {
-    text-transform: uppercase;
+/* =============== HIDEN TITLE =============== */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /* =============== HEADER SECTION =============== */
@@ -77,7 +87,6 @@ button {
 .menu-link {
     font-family: var(--primary-font);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -88,7 +97,6 @@ button {
     color: var(--primary-text-color);
     font-family: var(--primary-font);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -98,7 +106,7 @@ button {
     color: var(--accent-color);
 }
 
-/* =============== MAIN SECTION =============== */
+/* =============== STUDIO MAIN SECTION =============== */
 
 .hero { 
     background-color: var(--section-bcg-color);
@@ -106,6 +114,56 @@ button {
 
 .hero-title {
     color: var(--primary-bgc-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    color: var(--primary-title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.feature-list .title-studio {
+    color: var(--primary-title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.87;
+    text-transform: uppercase;
+}
+
+.feature-list .text-studio {
+    color: var(--primary-text-color);
+    line-height: 1.71;
+}
+
+.team-section {
+    background-color: var(--portfolio-btn-grey-color);
+}
+
+.img-team {
+    background-color: var(--primary-bgc-color);
+}
+
+.team-title {
+    color: var(--primary-title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.84;
+    text-align: center;
+}
+
+.team-text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
 /* =============== STUDIO BUTTON SECTION =============== */
@@ -113,6 +171,13 @@ button {
 .button-studio  {
     background-color: var(--accent-color);
     color: var(--primary-bgc-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     border-radius: 4px;
 }
 
@@ -122,11 +187,32 @@ button {
     background-color: var(--accent-second-color);
 }
 
+/* =============== PORTFOLIO MAIN SECTION =============== */
+
+.feature-list .title-portfolio {
+    color: var(--primary-title-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.feature-list .text-portfolio {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+}
+
 /* =============== PORTFOLIO BUTTON SECTION =============== */
 
 .button-portfolio  {
     background-color: var(--portfolio-btn-grey-color);
     color: var(--primary-title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
     border-radius: 4px;
 }
 
@@ -134,43 +220,6 @@ button {
 .button-portfolio:focus {
     color: var(--primary-bgc-color);
     background-color: var(--accent-second-color);
-}
-
-/* =============== HIDEN TITLE =============== */
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
-/* =============== MAIN SECTION =============== */
-
-.section-title {
-    color: var(--primary-title-color);
-}
-
-.feature-list .title {
-    color: var(--primary-title-color);
-}
-
-.feature-list .text {
-    color: var(--primary-text-color);
-}
-
-.team-section {
-    background-color: var(--portfolio-btn-grey-color);
-}
-
-.img-team {
-    background-color: var(--primary-bgc-color);
 }
 
 /* =============== FOOTER SECTION =============== */
@@ -197,5 +246,4 @@ button {
     font-family: var(--primary-font);
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
